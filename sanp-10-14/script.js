@@ -19,3 +19,23 @@ function weightConverter(weight, units) {
 
 	return weight;
 }
+
+
+/**
+ * Find the sum of all unique positive factors of a number.
+ *
+ * @param int number The number in witch we are finding factors
+ * @returns The sum of all unique positive factors
+ */
+function sumUniquePositiveFactors(number){
+	let sum = 0;
+	for (i=1; i<=number; i++) {
+		if(number % i === 0) {
+			sum = sum + i;
+		}
+	}
+
+	return sum;
+}
+
+	console.log(sumUniquePositiveFactors(12));
