@@ -1,13 +1,13 @@
 <?php
 
-use Cassandra\Value;
+
 
 class FishTaco {
 	private $recipe;
 	private $taste;
 
 	//constructor method
-	public function __construct(float $newRecipe, float $newTaste) {
+	public function __construct() {
 		$this->recipe;
 		$this->taste;
 	}
@@ -16,26 +16,36 @@ class FishTaco {
 /**
  * accessor for recipe.
  *
- * @return float of a  new Recipe (or null new Recipe)
+ * getters
  */
 	public function getRecipe(): float {
-		return ($this->recipe);
+		return ($this->recipe);null;
+	}
+	public function getTaste(): float {
+		return ($this->taste);
 	}
 
 	/**
-	 * @return mixed
+	 * setters
+	 * @param float $newRecipe
 	 */
-	public function getTaste(float $): {
-		return $this->taste;
+	public function setRecipe(float $newRecipe) :void {
+		$this->recipe =$newRecipe;
 	}
-
-	/**
-	 * mutator method for recipe.
-	 *
-	 * @param string $newRecipe
-	 * @return float
-	 */
-public function setRecipe(): float {
+	public function setTaste(float $newTaste) :void {
+	$this->taste =$newTaste;
+	}
+	//delicious method
+	public function delicious () :float {
+		return ($this->recipe - $this->taste);
+	}
 
 }
+
+$betterTaco = new FishTaco();
+echo $betterTaco->getRecipe()."_". $betterTaco->getTaste()."=". $betterTaco->delicious();
+
+$betterTaco->delicious();
+
+
 
