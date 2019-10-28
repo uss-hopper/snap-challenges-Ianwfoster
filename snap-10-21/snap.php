@@ -7,19 +7,17 @@ class FishTaco {
 	private $taste;
 
 	//constructor method
-	public function __construct() {
-		$this->recipe;
-		$this->taste;
+	public function __construct (float $newRecipe, float $newTaste) {
+		$this->setRecipe($newRecipe);
+		$this->setTaste($newTaste);
 	}
 
-
 /**
- * accessor for recipe.
  *
  * getters
  */
 	public function getRecipe(): float {
-		return ($this->recipe);null;
+		return ($this->recipe);
 	}
 	public function getTaste(): float {
 		return ($this->taste);
@@ -42,10 +40,6 @@ class FishTaco {
 
 }
 
-$betterTaco = new FishTaco();
-echo $betterTaco->getRecipe()."_". $betterTaco->getTaste()."=". $betterTaco->delicious();
-
-$betterTaco->delicious();
 
 
 
