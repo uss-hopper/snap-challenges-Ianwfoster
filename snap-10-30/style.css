@@ -6,14 +6,26 @@ ul {
 
 li {
 	background: tomato;
-	width: 200px;
 	line-height: 150px;
 	color: white;
 	font-weight: bold;
 	font-size: 3em;
 	text-align: center;
-	margin: 10px;
+
+}
+.my-list{
+	padding:0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+.my-item {
+	width: 200px;
+	line-height: 150px;
+	margin-top: 10px;
 	border: 0;
 	padding: 5px;
-	disply: inline;
+	display: inline;
 }
