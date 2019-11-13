@@ -671,8 +671,7 @@ let people = [ {
 "name": "Hoeger LLC", "catchPhrase": "Centralized empowering task-force", "bs": "target end-to-end models"
 }
 
-}
-];
+}];
 
 
 people.forEach(funtion(person) {
