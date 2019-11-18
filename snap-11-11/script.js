@@ -678,5 +678,4 @@ people.forEach(funtion(person) {
 	delete person.company;
 });
 
-);
 console.log(people);
