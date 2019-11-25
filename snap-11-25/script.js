@@ -13,3 +13,7 @@ function removeNumbers() {
 	}
 }
 
+
+
+startNumber = int(raw_input("1"))
+endNumber = int (raw_input("100"))
